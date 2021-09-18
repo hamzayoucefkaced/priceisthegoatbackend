@@ -12,14 +12,21 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+import java.util.Arrays;
+import java.util.Collections;
 
 @Configuration
 @EnableWebSecurity
 @RequiredArgsConstructor
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter implements WebMvcConfigurer {
 
-    private final HTNUserDetailService userDetailsService;
+    private static final String               FRONTEND_URL = "https://htn2021frontend.herokuapp.com/";
+    private final        HTNUserDetailService userDetailsService;
 
     @Override
     protected void configure(final HttpSecurity http) throws Exception {
@@ -63,5 +70,18 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter implements W
     public void addFormatters(final FormatterRegistry mvcConversionService) {
         mvcConversionService.addConverter(new UserToUserDTOConverter());
         mvcConversionService.addConverter(new RegistrationDTOToUserConverter());
+    }
+
+    @Bean
+    static CorsConfigurationSource corsConfigurationSource() {
+        final CorsConfiguration configuration = new CorsConfiguration();
+        configuration.setAllowedOrigins(Collections.singletonList(FRONTEND_URL));
+        configuration.setAllowedMethods(Arrays.asList("GET", "POST", "OPTIONS", "DELETE", "PUT", "PATCH"));
+        configuration.setExposedHeaders(Arrays.asList("Authorization", "content-type"));
+        configuration.setAllowedHeaders(Arrays.asList("X-Requested-With", "Origin", "Content-Type", "Accept", "Authorization"));
+        configuration.setAllowCredentials(true);
+        final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        source.registerCorsConfiguration("/**", configuration);
+        return source;
     }
 }
