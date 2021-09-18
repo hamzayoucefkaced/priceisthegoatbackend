@@ -25,7 +25,24 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter implements W
     protected void configure(final HttpSecurity http) throws Exception {
         http.requiresChannel()
             .requestMatchers(request -> request.getHeader("X-Forwarded-Proto") != null)
+
             .requiresSecure();
+
+        http.cors()
+                .and()
+                .authorizeRequests()
+                .antMatchers("/register").permitAll()
+                .antMatchers("/login").permitAll()
+                .antMatchers("/api").permitAll()
+                .and()
+                .formLogin().disable()
+                .logout()
+                .permitAll()
+                .logoutUrl("/logout")
+                .invalidateHttpSession(true)
+                .deleteCookies("JSESSIONID")
+                .and()
+                .csrf().disable();
     }
 
     // Beans
