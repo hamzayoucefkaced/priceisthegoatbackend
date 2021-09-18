@@ -26,6 +26,11 @@ public class UserService {
         return mvcConversionService.convert(userRepository.save(user), UserDTO.class);
     }
 
+    public UserDTO getUser(final long id) {
+        final User user = userRepository.findById(id).orElseThrow(() -> new HTNNotFoundException(String.format("User with user id: %d does not exist!", id)));
+        return mvcConversionService.convert(user, UserDTO.class);
+    }
+
     public boolean usernameExists(final String username) {
         return userRepository.findByUsername(username).isPresent();
     }
