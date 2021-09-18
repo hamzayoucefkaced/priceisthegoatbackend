@@ -1,4 +1,13 @@
 package com.hackthenorth.priceisthegoat.dal.dao;
 
-public class DogRepository {
-}
+import com.hackthenorth.priceisthegoat.dal.models.Dog;
+import org.springframework.data.repository.CrudRepository;
+
+import java.util.Optional;
+
+public interface DogRepository extends CrudRepository<Dog, String> {
+    Optional<Dog> findByName(String name);
+
+    Optional<Dog> findByAge(int age);
+    }
+
