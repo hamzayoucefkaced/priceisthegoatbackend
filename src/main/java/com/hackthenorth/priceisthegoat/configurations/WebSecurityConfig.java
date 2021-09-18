@@ -29,20 +29,20 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter implements W
             .requiresSecure();
 
         http.cors()
-                .and()
-                .authorizeRequests()
-                .antMatchers("/register").permitAll()
-                .antMatchers("/login").permitAll()
-                .antMatchers("/api").permitAll()
-                .and()
-                .formLogin().disable()
-                .logout()
-                .permitAll()
-                .logoutUrl("/logout")
-                .invalidateHttpSession(true)
-                .deleteCookies("JSESSIONID")
-                .and()
-                .csrf().disable();
+            .and()
+            .authorizeRequests()
+            .antMatchers("/register").permitAll()
+            .antMatchers("/login").permitAll()
+            .antMatchers("/api").permitAll()
+            .and()
+            .formLogin().disable()
+            .logout()
+            .permitAll()
+            .logoutUrl("/logout")
+            .invalidateHttpSession(true)
+            .deleteCookies("JSESSIONID")
+            .and()
+            .csrf().disable();
     }
 
     // Beans
