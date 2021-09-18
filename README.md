@@ -1,1 +1,1 @@
-![build status](https://app.travis-ci.com/hamzayoucefkaced/priceisthegoatbackend.svg?branch=master)
+[![Build Status](https://app.travis-ci.com/hamzayoucefkaced/priceisthegoatbackend.svg?branch=master)](https://app.travis-ci.com/hamzayoucefkaced/priceisthegoatbackend)
