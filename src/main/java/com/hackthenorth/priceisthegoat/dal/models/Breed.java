@@ -14,9 +14,12 @@ public class Breed {
     private String name;
     @Enumerated(EnumType.STRING)
     private Group type;
-    private int  height;
-    private int  weight;
+    @Enumerated(EnumType.STRING)
+    private Size size;
     private enum Group {
-        Sporting, Hound, Working, Terrier, Toy, NonSporting, Herding;
+        Sporting, Hound, Working, Terrier, Toy, NonSporting, Herding,
+    }
+    private enum Size {
+        Large, Medium, Small;
     }
 }
