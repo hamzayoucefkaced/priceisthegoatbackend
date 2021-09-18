@@ -17,6 +17,9 @@ public class Dog {
     @Id
     @GeneratedValue
     private Long   id;
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
     private String name;
     private int age;
     @OneToMany
