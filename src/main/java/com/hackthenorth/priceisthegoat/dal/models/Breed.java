@@ -5,7 +5,11 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import javax.persistence.*;
+
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.Id;
 
 @Entity
 @Data
@@ -21,19 +25,19 @@ public class Breed {
     private Size size;
 
     public enum Group {
-        @JsonProperty("Sporting") Sporting,
-        @JsonProperty("Hound") Hound,
-        @JsonProperty("Working") Working,
-        @JsonProperty("Terrier") Terrier,
-        @JsonProperty("Toy") Toy,
-        @JsonProperty("NonSporting") NonSporting,
-        @JsonProperty("Herding") Herding,
-        @JsonProperty("Mixed") Mixed;
+        @JsonProperty("Sporting") SPORTING,
+        @JsonProperty("Hound") HOUND,
+        @JsonProperty("Working") WORKING,
+        @JsonProperty("Terrier") TERRIER,
+        @JsonProperty("Toy") TOY,
+        @JsonProperty("NonSporting") NONSPORTING,
+        @JsonProperty("Herding") HERDING,
+        @JsonProperty("Mixed") MIXED;
     }
 
     public enum Size {
-        @JsonProperty("Large") Large,
-        @JsonProperty("Medium") Medium,
-        @JsonProperty("Small") Small;
+        @JsonProperty("Large") LARGE,
+        @JsonProperty("Medium") MEDIUM,
+        @JsonProperty("Small") SMALL;
     }
 }

@@ -1,0 +1,188 @@
+0	Affenpinscher	Toy	9	6, 13	10, 12
+1	Afghan Hound	Hound	25, 27	50, 60	10, 13
+2	Airedale Terrier	Terrier	21, 23	40, 65	10, 13
+3	Akbash Dog	Working	28, 34	90, 120	10, 12
+4	Alapaha Blue Blood Bulldog	Mixes and More	18, 24	55, 90	12, 13
+5	Alaskan Husky	Mixes and More		38, 50	10, 13
+6	Alaskan Malamute	Working	23, 25	65, 100	12, 15
+7	American Bulldog	Working	22, 27	60, 120	10, 12
+8	American Foxhound	Hound	21, 28	65, 75	8, 15
+9	American Pit Bull Terrier	Terrier	17, 21	30, 60	10, 15
+10	American Staffordshire Terrier	Terrier	17, 19	50, 60	12, 15
+11	American Water Spaniel	Sporting	15, 18	25, 45	10, 12
+12	Australian Cattle Dog	Herding	17, 20	44, 62	12, 14
+13	Australian Kelpie	Herding	20	31, 46	10, 13
+14	Australian Shepherd	Herding	18, 23	35, 65	12, 16
+15	Australian Terrier	Terrier	10, 11	14, 16	15
+16	Azawakh	Hound	23, 29	33, 55	10, 13
+17	Basenji	Hound	16, 17	22, 24	10, 12
+18	Basset Bleu de Gascogne	Hound	13, 15	35, 40	10, 14
+19	Basset Hound	Hound	14	50, 65	12, 15
+20	Beagle	Hound	13, 13, 15	20, 35	13, 16
+21	Bearded Collie	Herding	20, 22	45, 55	12, 14
+22	Beauceron	Herding	24	80, 110	10, 12
+23	Bedlington Terrier	Terrier	15, 16	17, 23	14, 16
+24	Bergamasco	Herding	22	55, 85	13, 15
+25	Bernese Mountain Dog	Working	23	65, 120	7, 10
+26	Bichon Frise	Non-Sporting		10, 18	15
+27	Black and Tan Coonhound	Hound	23, 27	65, 100	10, 12
+28	Black Russian Terrier	Working	26, 30	80, 145	10, 11
+29	Bloodhound	Hound	23, 27	80, 110	8, 10
+30	Blue Picardy Spaniel	Sporting	22, 24	55, 70	9, 13
+31	Bluetick Coonhound	Hound	21, 27	45, 80	12, 14
+32	Boerboel	Working	22, 27	110, 200	10, 12
+33	Bolognese	Toy	9, 12	7, 12	13, 15
+34	Border Collie	Herding	18, 22	30, 45	12, 16
+35	Border Terrier	Terrier			12, 14
+36	Borzoi	Hound	26, 28	55, 120	10, 13
+37	Boston Terrier	Non-Sporting		10, 25	11, 13
+38	Bouvier des Flandres	Herding		70, 110	10, 15
+39	Boxer	Working	25	50, 70	8, 10
+40	Boykin Spaniel	Sporting	14, 18	25, 40	10, 14
+41	Bracco Italiano	Sporting		55, 88	10, 12
+42	Briard	Herding	22, 27	70, 90	10, 12
+43	Brussels Griffon	Toy		8, 12	12, 15
+44	Bull Terrier	Terrier	21, 22	50, 70	10, 12
+45	Bulldog	Non-Sporting		40, 50	8, 10
+46	Bullmastiff	Working	24, 27	100, 130	8, 12
+47	Cairn Terrier	Terrier	9, 10	13, 14	14, 15
+48	Canaan Dog	Herding	19, 24	35, 55	12, 14
+49	Catahoula Leopard Dog	Herding	20, 26	50, 95	10, 12
+50	Cardigan Welsh Corgi	Herding		25, 38	12
+51	Cavalier King Charles Spaniel	Toy	12, 13	13, 18	10, 14
+52	Cesky Terrier	Terrier	10, 13	14, 24	10, 15
+53	Chart Polski	Hound		65, 95	10, 13
+54	Chesapeake Bay Retriever	Sporting	21, 26	55, 80	10, 13
+55	Chihuahua	Toy	5		12, 20
+56	Chinese Crested	Toy	11, 13	10, 13	10, 14
+57	Chinese Shar-Pei	Non-Sporting	18, 20	45, 60	10
+58	Chinook	Working	22, 26	50, 90	12, 15
+59	Chow Chow	Non-Sporting	17, 20	40, 70	12, 15
+60	Clumber Spaniel	Sporting	17, 20	55, 85	10, 12
+61	Cocker Spaniel	Sporting	14, 15	20, 30	12, 15
+62	Coton de Tulear	Non-Sporting	9, 11	9, 15	13, 16
+63	Curly-Coated Retriever	Sporting	23, 27	60, 70	10, 15
+64	Dachshund	Hound	5, 6, 8, 9	11, 16, 32	12, 15
+65	Dalmatian	Non-Sporting	19, 23		10, 13
+66	Dandie Dinmont Terrier	Terrier	8, 11	18, 24	12, 14
+67	Doberman Pinscher	Working	24, 28	66, 88	10
+68	Dogo Argentino	Working	27	80, 100	10, 12
+69	Dogue de Bordeaux	Working	23, 27	90, 160	5, 10
+70	English Cocker Spaniel	Sporting	15, 17	26, 34	12, 14
+71	English Foxhound	Hound	24	60, 70	10, 13
+72	English Setter	Sporting	24, 25	45, 80	12
+73	English Springer Spaniel	Sporting	19, 20	35, 50	12, 14
+74	English Toy Spaniel	Toy	10	8, 14	10, 12
+75	Eurasier	Non-Sporting		40, 70	12, 14
+76	Field Spaniel	Sporting	17, 18	35, 50	11, 15
+77	Fila Brasileiro	Working		90, 100	10, 12
+78	Finnish Lapphund	Herding	16, 21	33, 53	12, 15
+79	Finnish Spitz	Non-Sporting	20	23, 28	12, 15
+80	Flat-Coated Retriever	Sporting	22	60, 70	10, 13
+81	French Bulldog	Non-Sporting	11, 12	28	9, 11
+82	German Pinscher	Working	17, 20	25, 45	12, 14
+83	German Shepherd Dog	Herding	22, 26	50, 90	10, 13
+84	German Shorthaired Pointer	Sporting	21, 25	45, 70	12, 14
+85	German Spitz	Non-Sporting	9, 12, 15	8, 22, 24, 26	14, 16
+86	German Wirehaired Pointer	Sporting	22, 26	45, 75	14, 16
+87	Giant Schnauzer	Working		65, 90	10, 12
+88	Glen of Imaal Terrier	Terrier	14	32, 40	12, 15
+89	Golden Retriever	Sporting	24	55, 75	10, 12
+90	Gordon Setter	Sporting	23, 27	45, 80	10, 12
+91	Great Dane	Working	28, 32	110, 190	7, 10
+92	Great Pyrenees	Working	25, 32	85, 115	10, 12
+93	Greater Swiss Mountain Dog	Working		85, 140	7, 9
+94	Greyhound	Hound		50, 70	10, 13
+95	Harrier	Hound	18, 22	40, 60	12, 15
+96	Havanese	Toy		7, 13	14, 15
+97	Ibizan Hound	Hound		45, 50	11, 14
+98	Icelandic Sheepdog	Herding	18	20, 45	12, 15
+99	Irish Red and White Setter	Sporting	26	50, 75	11, 15
+100	Irish Setter	Sporting	24, 27	35, 70	10, 11
+101	Irish Terrier	Terrier	18	25, 27	12, 16
+102	Irish Water Spaniel	Sporting	21, 24	45, 68	12, 15
+103	Irish Wolfhound	Hound	30, 35	105, 180	6, 8
+104	Italian Greyhound	Toy	13, 15	7, 15	12, 15
+105	Keeshond	Non-Sporting	17, 18	35, 45	12, 15
+106	Kerry Blue Terrier	Terrier		33, 40	12, 15
+107	Komondor	Working		80, 100	10, 12
+108	Kooikerhondje	Sporting	14, 16	20, 30	12, 15
+109	Kuvasz	Working	26, 30	70, 115	8, 10
+110	Labrador Retriever	Sporting		55, 80	10, 13
+111	Lagotto Romagnolo	Sporting	16, 19	24, 35	14, 16
+112	Lakeland Terrier	Terrier		15, 17	12, 15
+113	Leonberger	Working		120, 170	6, 8
+114	Lhasa Apso	Non-Sporting	10, 11	12, 18	12, 15
+115	Maltese	Toy	8, 10	4, 7	15
+116	Manchester Terrier	Terrier	15, 16	12, 12, 22	14, 16
+117	Mastiff	Working	30	120, 230	8, 10
+118	Miniature Bull Terrier	Terrier	10, 14	20, 35	11, 12
+119	Miniature Pinscher	Toy	10	8, 11	15
+120	Miniature Schnauzer	Terrier	12, 14	11, 20	12, 14
+121	Mudi	Herding	15	18	12, 14
+122	Neapolitan Mastiff	Working	24, 31	110, 200	8, 10
+123	Newfoundland	Working	26, 28	100, 150	8, 10
+124	Norfolk Terrier	Terrier	9, 10	11, 12	12, 15
+125	Norwegian Buhund	Herding	16	26, 40	12, 15
+126	Norwegian Elkhound	Hound		48, 55	10, 12
+127	Norwegian Lundehund	Non-Sporting	12, 15	13, 16	6, 8
+128	Norwich Terrier	Terrier	10	11, 12	12, 15
+129	Nova Scotia Duck-Tolling Retriever	Sporting	17, 21	35, 50	12, 14
+130	Otterhound	Hound	24, 28	65, 125	10, 15
+131	Papillon	Toy	8, 11	3, 12	13, 17
+132	Pekingese	Toy		14	14, 18
+133	Pembroke Welsh Corgi	Herding	10, 12	25, 30	12, 14
+134	Perro de Presa Canario	Working	22	88, 110	10, 12
+135	Petit Basset Griffon Vendeen	Hound	13, 15	25, 42	10, 14
+136	Pharaoh Hound	Hound	21, 25	40, 60	12, 14
+137	Plott Hound	Hound	20, 25	40, 60	12, 14
+138	Pointer	Sporting	23, 28	45, 75	12, 15
+139	Polish Lowland Sheepdog	Herding	17, 20	35, 55	10, 12
+140	Pomeranian	Toy	8, 12	3, 7	15
+141	Poodle	Non-Sporting	15, 10, 15, 10	40, 55, 12, 15, 5, 10	14, 18
+142	Portuguese Water Dog	Working	17, 23	35, 60	10, 14
+143	Pug	Toy		14, 18	12, 14
+144	Pumi	Herding	15	18, 33	13, 15
+145	Pyrenean Shepherd	Herding	15	15, 32	12, 16
+146	Rat Terrier	Terrier	10, 13, 13, 18	8, 25	12, 18
+147	Redbone Coonhound	Hound	21, 27	45, 80	10, 12
+148	Rhodesian Ridgeback	Hound	24, 27	75, 80	10, 12
+149	Rottweiler	Working	22, 27	75, 110, 135	8, 10
+150	Russian Toy	Toy		3, 6	10, 15
+151	Saint Bernard	Working		130, 180	7, 10
+152	Saluki	Hound	23, 28	35, 65	12, 14
+153	Samoyed	Working	19	50, 60	12, 14
+154	Schapendoes	Herding	16, 20	30, 40	12, 15
+155	Schipperke	Non-Sporting	10, 13	10, 16	13, 15
+156	Scottish Deerhound	Hound	28, 32	70, 130	8, 10
+157	Sealyham Terrier	Terrier		20, 24	14, 17
+158	Shiba Inu	Non-Sporting		17, 23	12, 16
+159	Shih Tzu	Toy	8, 11	9, 16	10, 18
+160	Siberian Husky	Working	20	35, 60	12
+161	Silken Windhound	Mixes and More		20, 45	14
+162	Silky Terrier	Toy	9, 10	8, 10	12, 15
+163	Skye Terrier	Terrier	9, 10	35, 45	12, 14
+164	Sloughi	Hound	24, 29	35, 65	12, 15
+165	Small Munsterlander	Sporting	19, 22	35, 60	12, 14
+166	Soft Coated Wheaten Terrier	Terrier	16, 18	30, 40	12, 15
+167	Spanish Water Dog	Sporting	16, 20	30, 50	12, 15
+168	Spinone Italiano	Sporting		61, 85	10, 12
+169	Staffordshire Bull Terrier	Terrier	14, 16	24, 38	12, 14
+170	Standard Schnauzer	Working		30, 50	13, 15
+171	Sussex Spaniel	Sporting	13, 15	35, 45	10, 15
+172	Swedish Vallhund	Herding		20, 30	12, 14
+173	Thai Ridgeback	Hound	20, 24	35, 55	10, 12
+174	Tibetan Mastiff	Working	24, 26	85, 140	10, 14
+175	Tibetan Spaniel	Non-Sporting	10	9, 15	12, 15
+176	Tibetan Terrier	Non-Sporting	14, 17	20, 24	12, 15
+177	Toy Fox Terrier	Toy	8, 11	4, 9	12, 15
+178	Toy Poodle	Toy	10	5, 10	14, 18
+179	Treeing Walker Coonhound	Hound	20, 27	45, 80	10, 13
+180	Vizsla	Sporting	21, 24	50, 65	10, 14
+181	Weimaraner	Sporting	23, 27	55, 90	12, 15
+182	Welsh Springer Spaniel	Sporting	17, 19	35, 55	12, 15
+183	Welsh Terrier	Terrier	15	20, 22	10, 14
+184	Whippet	Hound	18, 22	25, 35	12, 15
+185	Wirehaired Pointing Griffon	Sporting	20, 24	45, 70	12, 14
+186	Wirehaired Vizsla	Sporting	25	45, 65	12, 14
+187	Yorkshire Terrier	Toy	8, 9	4, 7	12, 16
