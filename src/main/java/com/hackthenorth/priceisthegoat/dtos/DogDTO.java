@@ -15,5 +15,5 @@ import java.util.Set;
 public class DogDTO {
     public String name;
     public int age;
-    public Set<Breed> breeds;
+    public Set<BreedDTO> breeds;
 }
