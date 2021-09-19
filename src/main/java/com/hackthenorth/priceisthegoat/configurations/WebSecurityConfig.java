@@ -1,5 +1,6 @@
 package com.hackthenorth.priceisthegoat.configurations;
 
+import com.hackthenorth.priceisthegoat.converter.DogToDogDTOConverter;
 import com.hackthenorth.priceisthegoat.converter.RegistrationDTOToUserConverter;
 import com.hackthenorth.priceisthegoat.converter.UserToUserDTOConverter;
 import lombok.RequiredArgsConstructor;
@@ -71,6 +72,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter implements W
     public void addFormatters(final FormatterRegistry mvcConversionService) {
         mvcConversionService.addConverter(new UserToUserDTOConverter());
         mvcConversionService.addConverter(new RegistrationDTOToUserConverter());
+        mvcConversionService.addConverter(new DogToDogDTOConverter());
+        mvcConversionService.addConverter(new UserToUserDTOConverter());
     }
 
     @Bean

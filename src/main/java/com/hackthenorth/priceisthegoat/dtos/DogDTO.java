@@ -1,6 +1,6 @@
 package com.hackthenorth.priceisthegoat.dtos;
 
-import com.hackthenorth.priceisthegoat.dal.models.Breed;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -12,8 +12,11 @@ import java.util.Set;
 @Getter
 @Setter
 @EqualsAndHashCode
+// this will be used for when we send nested dtos from the frontend
+@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.WRAPPER_OBJECT)
 public class DogDTO {
-    public String name;
-    public int age;
-    public Set<BreedDTO> breeds;
+    private long          id;
+    private String        name;
+    private int           age;
+    private Set<BreedDTO> breeds;
 }
