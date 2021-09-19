@@ -8,8 +8,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Set;
-
 @RestController
 @RequiredArgsConstructor
 @RequestMapping(value="/dog")
@@ -19,11 +17,6 @@ public class DogController {
     @PostMapping(path="/add")
     public ResponseEntity<Dog> addDog(@RequestBody DogDTO dogDTO){
         return new ResponseEntity<>(dogService.addDog(dogDTO), HttpStatus.CREATED);
-    }
-
-    @GetMapping(path="/{id}/getDogs")
-    public ResponseEntity<Set<Dog>> getDogs(@PathVariable long userId){
-        return new ResponseEntity<>(dogService.getDogsByUserId(userId), HttpStatus.OK);
     }
 
 }

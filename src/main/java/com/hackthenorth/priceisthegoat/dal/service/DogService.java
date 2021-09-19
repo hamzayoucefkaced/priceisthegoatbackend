@@ -2,6 +2,7 @@ package com.hackthenorth.priceisthegoat.dal.service;
 
 import com.hackthenorth.priceisthegoat.converter.DogDTOToDogConverter;
 import com.hackthenorth.priceisthegoat.dal.dao.DogRepository;
+import com.hackthenorth.priceisthegoat.dal.dao.UserRepository;
 import com.hackthenorth.priceisthegoat.dal.models.Dog;
 import com.hackthenorth.priceisthegoat.dal.models.User;
 import com.hackthenorth.priceisthegoat.dtos.DogDTO;
@@ -18,13 +19,13 @@ public class DogService {
     private final DogDTOToDogConverter dogDTOToDogConverter;
 
     public Dog addDog(DogDTO dogDTO){
+        User user = userService.getUserFromContext();
         Dog dog = dogDTOToDogConverter.convert(dogDTO);
+        user.getDogs().add(dog);
 
         dogRepository.save(dog);
-        return dog;
-    }
+        userService.saveUser(user);
 
-    public Set<Dog> getDogsByUserId(long id){
-        return dogRepository.findAllByUserId(id).orElse(Set.of());
+        return dog;
     }
 }

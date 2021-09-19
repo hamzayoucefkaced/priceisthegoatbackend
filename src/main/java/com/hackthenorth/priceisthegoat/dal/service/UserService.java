@@ -1,5 +1,7 @@
 package com.hackthenorth.priceisthegoat.dal.service;
 
+import com.hackthenorth.priceisthegoat.configurations.HTNUserDetailService;
+import com.hackthenorth.priceisthegoat.configurations.HTNUserDetails;
 import com.hackthenorth.priceisthegoat.dal.dao.UserRepository;
 import com.hackthenorth.priceisthegoat.dal.models.User;
 import com.hackthenorth.priceisthegoat.dal.service.exceptions.ExceptionHelper;
@@ -7,6 +9,7 @@ import com.hackthenorth.priceisthegoat.dal.service.exceptions.HTNNotFoundExcepti
 import com.hackthenorth.priceisthegoat.dtos.UserDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.core.convert.ConversionService;
+import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
@@ -16,9 +19,10 @@ import org.springframework.stereotype.Service;
 public class UserService {
     private final ConversionService mvcConversionService;
     private final UserRepository    userRepository;
+    private final HTNUserDetailService htnUserDetailService;
 
     public User getUserFromContext() {
-        final UserDetails details = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        final HTNUserDetails details = (HTNUserDetails) htnUserDetailService.loadUserByUsername((String) SecurityContextHolder.getContext().getAuthentication().getPrincipal());
         return handleGetByUsername(details.getUsername());
     }
 
@@ -29,6 +33,10 @@ public class UserService {
     public UserDTO getUser(final long id) {
         final User user = userRepository.findById(id).orElseThrow(() -> new HTNNotFoundException(String.format("User with user id: %d does not exist!", id)));
         return mvcConversionService.convert(user, UserDTO.class);
+    }
+
+    public void saveUser(User user){
+        userRepository.save(user);
     }
 
     public boolean usernameExists(final String username) {
