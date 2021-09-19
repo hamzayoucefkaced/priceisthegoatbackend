@@ -1,6 +1,8 @@
 package com.hackthenorth.priceisthegoat.dal.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
@@ -9,6 +11,7 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class Breed {
     @Id
     private String name;
@@ -16,10 +19,21 @@ public class Breed {
     private Group type;
     @Enumerated(EnumType.STRING)
     private Size size;
-    private enum Group {
-        Sporting, Hound, Working, Terrier, Toy, NonSporting, Herding,
+
+    public enum Group {
+        @JsonProperty("Sporting") Sporting,
+        @JsonProperty("Hound") Hound,
+        @JsonProperty("Working") Working,
+        @JsonProperty("Terrier") Terrier,
+        @JsonProperty("Toy") Toy,
+        @JsonProperty("NonSporting") NonSporting,
+        @JsonProperty("Herding") Herding,
+        @JsonProperty("Mixed") Mixed;
     }
-    private enum Size {
-        Large, Medium, Small;
+
+    public enum Size {
+        @JsonProperty("Large") Large,
+        @JsonProperty("Medium") Medium,
+        @JsonProperty("Small") Small;
     }
 }
